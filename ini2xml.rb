@@ -29,6 +29,9 @@ end
 def creatfinalxml(final_hsh)
   builder = Builder::XmlMarkup.new(:target => @stdout, :indent => 1)
   builder.set do
+    builder.hash_code("value" => "")    
+    builder.enable_multiJoy("value" =>"") 
+    builder.enable_fn("value" => "")
     builder.key do
       final_hsh.each do |k,v|
         builder.method_missing(k,"value" => v)
