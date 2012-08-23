@@ -1,0 +1,65 @@
+<set>
+<!--双星物语2加强版-->
+ <hash_code value=""/>
+ <enable_multiJoy value="-1"/>
+ <enable_fn value="-1"/>
+ <key>
+  <joy_button_0 value="86"/>
+  <joy_button_0_act value="奥义"/>
+  <joy_button_1 value="67"/>
+  <joy_button_1_act value="魔法"/>
+  <joy_button_2 value="90"/>
+  <joy_button_2_act value="跳跃/取消"/>
+  <joy_button_3 value="88"/>
+  <joy_button_3_act value="攻击/确定"/>
+  <joy_button_4 value="17"/>
+  <joy_button_4_act value="快速对话"/>
+  <joy_button_5 value=""/>
+  <joy_button_5_act value=""/>
+  <joy_button_6 value=""/>
+  <joy_button_6_act value=""/>
+  <joy_button_7 value=""/>
+  <joy_button_7_act value=""/>
+  <joy_button_8 value="27"/>
+  <joy_button_8_act value="ESC"/>
+  <joy_button_9 value="13"/>
+  <joy_button_9_act value="回车"/>
+  <joy_button_10 value=""/>
+  <joy_button_10_act value=""/>
+  <joy_button_11 value=""/>
+  <joy_button_11_act value=""/>
+  <joy_button_12 value=""/>
+  <joy_button_12_act value=""/>
+  <joy_axis_0_left value="65"/>
+  <joy_axis_0_left_act value="切换装备"/>
+  <joy_axis_0_right value="83"/>
+  <joy_axis_0_right_act value="切换物品"/>
+  <joy_axis_1_up value=""/>
+  <joy_axis_1_up_act value=""/>
+  <joy_axis_1_down value=""/>
+  <joy_axis_1_down_act value=""/>
+  <joy_axis_2_left value=""/>
+  <joy_axis_2_left_act value=""/>
+  <joy_axis_2_right value=""/>
+  <joy_axis_2_right_act value=""/>
+  <joy_axis_3_up value=""/>
+  <joy_axis_3_up_act value=""/>
+  <joy_axis_3_down value=""/>
+  <joy_axis_3_down_act value=""/>
+  <joy_axis_4_left value="37"/>
+  <joy_axis_4_left_act value="光做左"/>
+  <joy_axis_4_right value="39"/>
+  <joy_axis_4_right_act value="光标右"/>
+  <joy_axis_5_up value="38"/>
+  <joy_axis_5_up_act value="光标上"/>
+  <joy_axis_5_down value="40"/>
+  <joy_axis_5_down_act value="光标下"/>
+ </key>
+ <mouse>
+  <enable value="0"/>
+  <move value="0"/>
+  <mouse_sensitive value="2000"/>
+  <left value="10"/>
+  <right value="11"/>
+ </mouse>
+</set>

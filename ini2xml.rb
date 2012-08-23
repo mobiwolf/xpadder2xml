@@ -35,7 +35,9 @@ def creatfinalxml(final_hsh)
     builder.key do
       final_hsh.each do |k,v|
         builder.method_missing(k,"value" => v)
+        builder.method_missing(k+"_fn", "value" =>"")
         builder.method_missing(k+"_act","value" => "")
+        builder.method_missing(k+"_fn_act","value" => "")
       end
     end
     builder.mouse do

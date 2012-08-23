@@ -1,9 +1,10 @@
 <set>
+<!--英雄传说6：空之轨迹FC-->
  <hash_code value=""/>
- <enable_multiJoy value=""/>
- <enable_fn value=""/>
+ <enable_multiJoy value="-1"/>
+ <enable_fn value="-1"/>
  <key>
-  <joy_button_0 value=""/>
+ <joy_button_0 value=""/>
   <joy_button_0_fn value=""/>
   <joy_button_0_act value=""/>
   <joy_button_0_fn_act value=""/>
@@ -13,7 +14,7 @@
   <joy_button_1_fn_act value=""/>
   <joy_button_2 value="32"/>
   <joy_button_2_fn value=""/>
-  <joy_button_2_act value=""/>
+  <joy_button_2_act value="决定/对话"/>
   <joy_button_2_fn_act value=""/>
   <joy_button_3 value=""/>
   <joy_button_3_fn value=""/>
@@ -21,7 +22,7 @@
   <joy_button_3_fn_act value=""/>
   <joy_button_4 value="17"/>
   <joy_button_4_fn value=""/>
-  <joy_button_4_act value=""/>
+  <joy_button_4_act value="快速对话"/>
   <joy_button_4_fn_act value=""/>
   <joy_button_5 value=""/>
   <joy_button_5_fn value=""/>
@@ -29,19 +30,19 @@
   <joy_button_5_fn_act value=""/>
   <joy_button_6 value="16"/>
   <joy_button_6_fn value=""/>
-  <joy_button_6_act value=""/>
+  <joy_button_6_act value="地图显示"/>
   <joy_button_6_fn_act value=""/>
   <joy_button_7 value=""/>
   <joy_button_7_fn value=""/>
   <joy_button_7_act value=""/>
   <joy_button_7_fn_act value=""/>
   <joy_button_8 value="27"/>
-  <joy_button_8_fn value=""/>
+  <joy_button_8_fn value="ESC（取消）"/>
   <joy_button_8_act value=""/>
   <joy_button_8_fn_act value=""/>
   <joy_button_9 value="13"/>
   <joy_button_9_fn value=""/>
-  <joy_button_9_act value=""/>
+  <joy_button_9_act value="ENTER（确定）"/>
   <joy_button_9_fn_act value=""/>
   <joy_button_10 value=""/>
   <joy_button_10_fn value=""/>
@@ -57,11 +58,11 @@
   <joy_button_12_fn_act value=""/>
   <joy_axis_0_left value="90"/>
   <joy_axis_0_left_fn value=""/>
-  <joy_axis_0_left_act value=""/>
+  <joy_axis_0_left_act value="视角左移"/>
   <joy_axis_0_left_fn_act value=""/>
   <joy_axis_0_right value="88"/>
   <joy_axis_0_right_fn value=""/>
-  <joy_axis_0_right_act value=""/>
+  <joy_axis_0_right_act value="视角右移"/>
   <joy_axis_0_right_fn_act value=""/>
   <joy_axis_1_up value=""/>
   <joy_axis_1_up_fn value=""/>
@@ -73,43 +74,42 @@
   <joy_axis_1_down_fn_act value=""/>
   <joy_axis_2_left value="66"/>
   <joy_axis_2_left_fn value=""/>
-  <joy_axis_2_left_act value=""/>
+  <joy_axis_2_left_act value="星杯手册"/>
   <joy_axis_2_left_fn_act value=""/>
   <joy_axis_2_right value="67"/>
   <joy_axis_2_right_fn value=""/>
-  <joy_axis_2_right_act value=""/>
+  <joy_axis_2_right_act value="料理手册"/>
   <joy_axis_2_right_fn_act value=""/>
   <joy_axis_3_up value="86"/>
   <joy_axis_3_up_fn value=""/>
-  <joy_axis_3_up_act value=""/>
+  <joy_axis_3_up_act value="地图扩大"/>
   <joy_axis_3_up_fn_act value=""/>
   <joy_axis_3_down value="77"/>
   <joy_axis_3_down_fn value=""/>
-  <joy_axis_3_down_act value=""/>
+  <joy_axis_3_down_act value="方石/地图"/>
   <joy_axis_3_down_fn_act value=""/>
   <joy_axis_4_left value="37"/>
   <joy_axis_4_left_fn value=""/>
-  <joy_axis_4_left_act value=""/>
+  <joy_axis_4_left_act value="光标左"/>
   <joy_axis_4_left_fn_act value=""/>
   <joy_axis_4_right value="39"/>
   <joy_axis_4_right_fn value=""/>
-  <joy_axis_4_right_act value=""/>
+  <joy_axis_4_right_act value="光标右"/>
   <joy_axis_4_right_fn_act value=""/>
   <joy_axis_5_up value="38"/>
   <joy_axis_5_up_fn value=""/>
-  <joy_axis_5_up_act value=""/>
+  <joy_axis_5_up_act value="光标上"/>
   <joy_axis_5_up_fn_act value=""/>
   <joy_axis_5_down value="40"/>
   <joy_axis_5_down_fn value=""/>
-  <joy_axis_5_down_act value=""/>
+  <joy_axis_5_down_act value="光标下"/>
   <joy_axis_5_down_fn_act value=""/>
  </key>
  <mouse>
-  <enable value="1"/>
+  <enable value="0"/>
   <move value="0"/>
   <mouse_sensitive value="2000"/>
   <left value="10"/>
   <right value="11"/>
  </mouse>
 </set>
-<to_s/>

@@ -1,0 +1,61 @@
+<set>
+<!--冲浪企鹅-->
+ <key>
+  <joy_button_0 value="75"/>
+  <joy_button_0_act value="跳跃"/>
+  <joy_button_1 value="76"/>
+  <joy_button_1_act value="大花样"/>
+  <joy_button_2 value="74"/>
+  <joy_button_2_act value="小花样"/>
+  <joy_button_3 value="73"/>
+  <joy_button_3_act value="释放能量"/>
+  <joy_button_4 value=""/>
+  <joy_button_4_act value="   "/>
+  <joy_button_5 value="16"/>
+  <joy_button_5_act value="滑行"/>
+  <joy_button_6 value=""/>
+  <joy_button_6_act value="   "/>
+  <joy_button_7 value="32"/>
+  <joy_button_7_act value="加速"/>
+  <joy_button_8 value="27"/>
+  <joy_button_8_act value="ESC"/>
+  <joy_button_9 value="13"/>
+  <joy_button_9_act value="回车"/>
+  <joy_button_10 value=""/>
+  <joy_button_10_act value=""/>
+  <joy_button_11 value=""/>
+  <joy_button_11_act value=""/>
+  <joy_axis_0_left value="65"/>
+  <joy_axis_0_left_act value="人物左移动"/>
+  <joy_axis_0_right value="68"/>
+  <joy_axis_0_right_act value="人物右移动"/>
+  <joy_axis_1_up value="87"/>
+  <joy_axis_1_up_act value="人物上移动"/>
+  <joy_axis_1_down value="83"/>
+  <joy_axis_1_down_act value="人物下移动"/>
+  <joy_axis_2_left value="37"/>
+  <joy_axis_2_left_act value="方向左"/>
+  <joy_axis_2_right value="39"/>
+  <joy_axis_2_right_act value="方向右"/>
+  <joy_axis_3_up value="38"/>
+  <joy_axis_3_up_act value="方向上"/>
+  <joy_axis_3_down value="40"/>
+  <joy_axis_3_down_act value="方向下"/>
+  <joy_axis_4_left value=""/>
+  <joy_axis_4_left_act value="   "/>
+  <joy_axis_4_right value=""/>
+  <joy_axis_4_right_act value="   "/>
+  <joy_axis_5_up value=""/>
+  <joy_axis_5_up_act value="   "/>
+  <joy_axis_5_down value=""/>
+  <joy_axis_5_down_act value="   "/>
+ </key>
+ <mouse>
+  <enable value="0"/>
+  <enable value="0"/>
+  <move value="0"/>
+  <mouse_sensitive value="2000"/>
+  <left value=""/>
+  <right value="11"/>
+ </mouse>
+</set>
