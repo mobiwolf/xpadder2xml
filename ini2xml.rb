@@ -2,14 +2,12 @@
 require 'inifile'
 require 'builder'
 
-
 #下面导入的部分是常量，读入基础配置信息
 Xpadder_keycode = IniFile.load("./Inis/keycode_xpadder.ini")
 Gamepad_tv =  IniFile.load("./Inis/gamepad_tv.ini")
 
 Keycode_hsh = Xpadder_keycode["keycode"]
 Gamepad_hsh = Gamepad_tv["key pairs"]
-
 
 #合并生成
 def mergeHash(gamepad_hsh,keycode_hsh,xpadder_hsh)
@@ -43,15 +41,12 @@ end
 
 #下面开始执行调用
 final_obj = Hash.new
-Dir.foreach("./Xpadderinis") { |filename|
+Dir.foreach("./Xpadderinis") do |filename|
   if File.extname(filename) == ".xpadderprofile"
     xpadder = IniFile.load(filename)
     xpadder_hsh = xpadder["Assignments"]
-    final_obj = mergeHash(Gamepad_hsh,Keycode_hsh,xpadder_hsh)
+    final_obj = mergeHash(Gamepad_hsh, Keycode_hsh, xpadder_hsh)
     final_xml = creatfinalxml(final_obj)
-    File.open("./Xmls/#{File.basename("#{filename}",".xpadderprofile")}.xml","w") do |xml_file|
-      xml_file << final_xml
-    end
+    File.open("./Xmls/#{File.basename("#{filename}", ".xpadderprofile")}.xml", "w") { |xml_file| xml_file << final_xml }
   end
-
-}
+end

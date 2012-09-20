@@ -11,11 +11,11 @@
   <joy_button_1_fn value=""/>
   <joy_button_1_act value=""/>
   <joy_button_1_fn_act value=""/>
-  <joy_button_2 value="2"/>
+  <joy_button_2 value=""/>
   <joy_button_2_fn value=""/>
   <joy_button_2_act value=""/>
   <joy_button_2_fn_act value=""/>
-  <joy_button_3 value="1"/>
+  <joy_button_3 value=""/>
   <joy_button_3_fn value=""/>
   <joy_button_3_act value=""/>
   <joy_button_3_fn_act value=""/>
@@ -39,7 +39,7 @@
   <joy_button_8_fn value=""/>
   <joy_button_8_act value=""/>
   <joy_button_8_fn_act value=""/>
-  <joy_button_9 value="13"/>
+  <joy_button_9 value=""/>
   <joy_button_9_fn value=""/>
   <joy_button_9_act value=""/>
   <joy_button_9_fn_act value=""/>
