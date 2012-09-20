@@ -1,27 +1,17 @@
 #encoding: utf-8
 require 'inifile'
-require 'xmlsimple'
-require 'Find'
 require 'builder'
 
-xpadder_keyCode = IniFile.load("./Inis/keycode_xpadder.ini")
-gamepad_tv =  IniFile.load("./Inis/gamepad_tv.ini")
 
-keycode_hsh = xpadder_keyCode["keycode"]
-gamepad_hsh = gamepad_tv["key pairs"]
+#下面导入的部分是常量，读入基础配置信息
+Xpadder_keycode = IniFile.load("./Inis/keycode_xpadder.ini")
+Gamepad_tv =  IniFile.load("./Inis/gamepad_tv.ini")
+
+Keycode_hsh = Xpadder_keycode["keycode"]
+Gamepad_hsh = Gamepad_tv["key pairs"]
 
 
-#这里可能会有bug，应该是根据文件后缀来判断，需要修改一下。
-def scanf(path)
-  list=[]
-  Find.find(path) do |f|
-    if File.ftype(f) == "file"
-    list << f
-    end
-  end
-  list.sort
-end
-
+#合并生成
 def mergeHash(gamepad_hsh,keycode_hsh,xpadder_hsh)
   return gamepad_hsh.inject({}) { |h, e| h[e.first] = keycode_hsh[xpadder_hsh[e.last]]; h }
 end
@@ -53,17 +43,17 @@ end
 
 #下面开始执行调用
 final_obj = Hash.new
-files = scanf("./Xpadderinis")
-p files
-files.each do |f|
-  file_name = File.basename(f,".xpadderprofile")
-  xpadder = IniFile.load(f)
-  xpadder_hsh = xpadder["Assignments"]
-  final_obj = mergeHash(gamepad_hsh,keycode_hsh,xpadder_hsh)
-  p file_name
-  final_xml = creatfinalxml(final_obj)
-  File.open("./Xmls/#{file_name}.xml","w") do |xml_file|
-    xml_file << final_xml
+Dir.foreach("./Xpadderinis") { |filename|
+  if File.extname(filename) == "xpadderprofile"
+    xpadder = IniFile.load(filename)
+    xpadder_hsh = xpadder["Assignments"]
+    final_obj = mergeHash(Gamepad_hsh,Keycode_hsh,xpadder_hsh)
+    final_xml = creatfinalxml(final_obj)
+    File.open("./Xmls/#{File.basename("#{filename}",".xpadderprofile")}.xml","w") do |xml_file|
+      xml_file << final_xml
+      p filename
+      p xml_file
+    end
   end
-end
 
+}
