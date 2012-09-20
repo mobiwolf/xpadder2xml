@@ -44,15 +44,13 @@ end
 #下面开始执行调用
 final_obj = Hash.new
 Dir.foreach("./Xpadderinis") { |filename|
-  if File.extname(filename) == "xpadderprofile"
+  if File.extname(filename) == ".xpadderprofile"
     xpadder = IniFile.load(filename)
     xpadder_hsh = xpadder["Assignments"]
     final_obj = mergeHash(Gamepad_hsh,Keycode_hsh,xpadder_hsh)
     final_xml = creatfinalxml(final_obj)
     File.open("./Xmls/#{File.basename("#{filename}",".xpadderprofile")}.xml","w") do |xml_file|
       xml_file << final_xml
-      p filename
-      p xml_file
     end
   end
 
